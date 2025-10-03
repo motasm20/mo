@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Motasm Hasan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <div class="brand">MH<span class="highlight">Portfolio</span></div>
+      <nav id="menu">
+        <a href="#hero">Home</a>
+        <a href="#about">Over</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projecten</a>
+        <a href="#timeline">Tijdlijn</a>
+        <a href="#stats">Stats</a>
+        <a href="#certs">Certificaten</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle">🌙</button>
+      <button id="mobile-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Ik bouw <span class="highlight">snelle</span> & <span class="highlight">duidelijke</span> software</h1>
+        <p>Tweedejaars student Software Development. Ervaring met <b>C#</b>, <b>Laravel/PHP</b>, <b>JavaScript</b> en <b>HTML/CSS</b>.</p>
+        <div class="buttons">
+          <a href="#projects" class="btn">Bekijk projecten</a>
+          <a href="cv.pdf" target="_blank" class="btn-outline">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="media/profile.png" alt="Motasm Hasan"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Over mij</h2>
+        <p>Ik ben Motasm Hasan, student Software Development in Eindhoven. Ik hou van programmeren, gamen en fitness. Mijn passie is het bouwen van API’s, webapps en desktop software die écht nuttig zijn.</p>
+        <ul>
+          <li>🏫 Opleiding: MBO-4 Software Development</li>
+          <li>📍 Eindhoven, Nederland</li>
+          <li>💡 Interesses: programmeren, fitness, gaming</li>
+        </ul>
+      </div>
+      <div>
+        <img src="media/office.jpg" alt="Werkruimte" class="rounded"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Laravel/PHP</h3>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>C# / .NET</h3>
+          <div class="bar"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>HTML / CSS / JS</h3>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>Databases (SQL)</h3>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projecten -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projecten</h2>
+      <div class="filter">
+        <button data-filter="all" class="active">Alle</button>
+        <button data-filter="laravel">Laravel</button>
+        <button data-filter="csharp">C#</button>
+        <button data-filter="frontend">Front-end</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card laravel">
+          <img src="media/tasks-api.png" alt="Tasks API"/>
+          <h3>Tasks API</h3>
+          <p>Laravel CRUD API met auth en logging</p>
+          <a href="https://github.com/motasm20/tasks-api" class="btn">GitHub</a>
+        </div>
+        <div class="project-card csharp">
+          <img src="media/wpf-note.png" alt="Note Manager"/>
+          <h3>Note Manager</h3>
+          <p>Desktop WPF app (MVVM) voor notities</p>
+          <a href="https://github.com/motasm20/wpf-note-manager" class="btn">GitHub</a>
+        </div>
+        <div class="project-card frontend">
+          <img src="media/fitness.png" alt="Fitness Tracker"/>
+          <h3>Fitness Tracker</h3>
+          <p>Responsive front-end project met charts</p>
+          <a href="https://motasm20.github.io/fitness-tracker" class="btn">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tijdlijn -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2>Tijdlijn</h2>
+      <div class="timeline">
+        <div class="event"><span>2025</span> Stageprojecten (Laravel, C#, Front-end)</div>
+        <div class="event"><span>2023</span> Start opleiding Software Development</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="section">
+    <div class="container stats">
+      <div><h3>2+</h3><p>Jaar ervaring</p></div>
+      <div><h3>15+</h3><p>Projecten</p></div>
+      <div><h3>5+</h3><p>Frameworks</p></div>
+      <div><h3>∞</h3><p>Leergierigheid</p></div>
+    </div>
+  </section>
+
+  <!-- Certificaten -->
+  <section id="certs" class="section">
+    <div class="container">
+      <h2>Certificaten</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>IBM Data Analyst</h3>
+          <p>SQL, Excel, Python</p>
+        </div>
+        <div class="card">
+          <h3>Laravel Fundamentals</h3>
+          <p>Routes, controllers, auth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>Wat anderen zeggen</h2>
+      <div class="reviews-grid">
+        <div class="card">"Motasm leert snel en schrijft nette code." — Docent</div>
+        <div class="card">"Hij neemt initiatief en is betrouwbaar in teamwerk." — Klasgenoot</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2>Blog / Artikelen</h2>
+      <div class="blog-grid">
+        <article>
+          <h3>Mijn eerste Laravel API</h3>
+          <p>Hoe ik routes, controllers en auth heb toegepast.</p>
+        </article>
+        <article>
+          <h3>Waarom C# leuk is</h3>
+          <p>MVVM pattern en desktop apps bouwen met WPF.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <form>
+          <input type="text" placeholder="Naam" required/>
+          <input type="email" placeholder="E-mail" required/>
+          <textarea placeholder="Bericht" required></textarea>
+          <button type="submit" class="btn">Verstuur</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Snelle links</h3>
+        <p>📧 <a href="mailto:motasm@example.com">E-mail</a></p>
+        <p>🐙 <a href="https://github.com/motasm20" target="_blank">GitHub</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/JOUW_LINKEDIN" target="_blank">LinkedIn</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="150" style="border:0;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> Motasm Hasan | Gemaakt met ❤️ en gratis tools
+  </footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
